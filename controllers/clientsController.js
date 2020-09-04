@@ -2,6 +2,10 @@ import { db } from '../models/index.js'
 
 const ClientsAccounts = db.clientsAccountsModel;
 
+const indexAPI = async (req, res) => {
+    res.send("MyBankAPI - Leia a documentação no Git: pedropaulodf");
+}
+
 /**
     4. Crie um endpoint para registrar um depósito em uma conta. Este endpoint deverá
     receber como parâmetros a “agencia”, o número da “conta” e o valor do depósito.
@@ -329,4 +333,4 @@ const tranferPrivate = async (req, res) => {
 
 
 // export default { create, findAll, findOne, update, remove };
-export default { deposito, saque, saldo, excluirConta, mediaSaldo, menoresSaldos, maioresSaldos, tranferPrivate, transferencia };
+export default { indexAPI, deposito, saque, saldo, excluirConta, mediaSaldo, menoresSaldos, maioresSaldos, tranferPrivate, transferencia };

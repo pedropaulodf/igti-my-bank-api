@@ -3,6 +3,9 @@ import controllerClients from '../controllers/clientsController.js'
 
 const app = express();
 
+// INDEX
+app.get('/', controllerClients.indexAPI);
+
 // QUESTÃO 4
 app.put('/deposito/:agencia/:conta/:balance', controllerClients.deposito);
 
