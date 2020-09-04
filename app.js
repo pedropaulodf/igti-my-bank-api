@@ -3,13 +3,15 @@ import { clientsRouter } from './routes/clientsRouter.js'
 import { db } from './models/index.js'
 
 // nodemon -r dotenv/config app.js
-console.log(db.url);
 console.log(db.port);
+console.log(db.name);
+console.log(db.user);
+console.log(db.password);
 
 // Conexão com o Mongo DB
 (async () => {
     try {
-        db.mongoose.connect(db.url, {
+        db.mongoose.connect("mongodb+srv://"+db.user+":"+db.password+"@bootcamp.kwm4e.gcp.mongodb.net/"+db.name+"?retryWrites=true&w=majority", {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useCreateIndex: true,
