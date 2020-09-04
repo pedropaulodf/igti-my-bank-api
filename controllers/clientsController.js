@@ -3,7 +3,7 @@ import { db } from '../models/index.js'
 const ClientsAccounts = db.clientsAccountsModel;
 
 const indexAPI = async (req, res) => {
-    res.send("MyBankAPI - Leia a documentação no Git: pedropaulodf");
+    res.send("MyBankAPI - Leia a documentação no Github: pedropaulodf");
 }
 
 /**
