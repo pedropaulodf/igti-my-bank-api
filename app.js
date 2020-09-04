@@ -4,6 +4,7 @@ import { db } from './models/index.js'
 
 // nodemon -r dotenv/config app.js
 console.log(db.url);
+console.log(db.port);
 
 // Conexão com o Mongo DB
 (async () => {
@@ -31,6 +32,6 @@ app.use(express.json());
 app.use(clientsRouter);
 
 // Iniciar o server
-app.listen(3000, () => {
+app.listen(db.port, () => {
     console.log("API Iniciadda");
 })
