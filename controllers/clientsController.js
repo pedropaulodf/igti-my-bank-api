@@ -247,7 +247,7 @@ const mediaSaldo = async (req, res) => {
         res.send("Média: " + (totalSaldo / data.length).toFixed(2));
 
     } catch (error) {
-        res.status(500).send("Erro ao realizar o saque. " + error);
+        res.status(500).send("Erro ao realizar a consulta do saldo. " + error);
     }
 }
 
