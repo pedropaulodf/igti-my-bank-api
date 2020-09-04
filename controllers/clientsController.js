@@ -241,10 +241,10 @@ const mediaSaldo = async (req, res) => {
             totalSaldo += data[i].balance;
         }
 
-        console.log("A médio do saldo da agência "+agencia+" é: " + (totalSaldo / data.length).toFixed(2));
+        console.log("A média do saldo da agência "+agencia+" é: " + (totalSaldo / data.length).toFixed(2));
 
         // Retorna o valor do balance
-        res.send("A médio do saldo da agência "+agencia+" é: " + (totalSaldo / data.length).toFixed(2));
+        res.send("A média do saldo da agência "+agencia+" é: " + (totalSaldo / data.length).toFixed(2));
 
     } catch (error) {
         res.status(500).send("Erro ao realizar a consulta do saldo. " + error);
