@@ -1,4 +1,3 @@
-# igti-mybankapi
 Projeto desenvolvido no Bootcamp do IGTI [Meu primeiro bootcamp]
 
 ## Objetivo
