@@ -1,5 +1,5 @@
 # igti-mybankapi
-Projeto desenvolvimento no Bootcamp do IGTI [Meu primeiro bootcamp]
+Projeto desenvolvido no Bootcamp do IGTI [Meu primeiro bootcamp]
 
 ## Objetivo
 
